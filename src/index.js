@@ -75,6 +75,14 @@ const API_ENDPOINTS = {
   addOrRemoveToReleaseReport: {
     method: 'PATCH',
     path: '/reports/release/:release_id/issues'
+  },
+  getDependencies: {
+    method: 'GET',
+    path: '/repositories/:repo_id/dependencies'
+  },
+  createDependency: {
+    method: 'POST',
+    path: '/dependencies'
   }
 };
 
